@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang='en-US'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport'
+        content='width=device-width, initial-scale=1.0'>
+  <link rel="stylesheet" href="specificity.css" />
+  <title>Homework 2 - Specificity</title>
+</head>
+<body>
+<!--
+1,0,0,0
+0,1,1,1
+0,1,0,0
+0,2,1,0
+0,0,1,0
+0,0,0,1
+-->
+  <p style="color:red">1,0,0,0</p>
+  <p id="second" class="third">0,1,1,1</p>
+  <p id="second">0,1,0,0</p>
+  <div id="someId">
+    <p id="second" class="third">0,2,1,0</p>
+  </div>
+  <p class="third">0,0,1,0</p>
+  <p>0,0,0,1</p>
+
+
+</body>
+</html>

@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css?family=Amiri|Dancing+Script");
+.container_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body, h1, h2, h3, ul, p, a, button {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+li {
+  margin-top: 1em;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 28px;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 22px;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+h3 {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+a:link {
+  color: #d81b60;
+}
+
+a:visited {
+  color: #3f51b5;
+}
+
+a:hover {
+  color: #d81b60;
+}
+
+a:active {
+  color: #3f51b5;
+}
+
+body {
+  font-family: "Amiri", serif;
+  font-weight: lighter;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 20px;
+  grid-template-rows: repeat(6, auto);
+  grid-row-gap: 10px;
+  grid-auto-flow: row;
+  margin-top: 50px;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: white;
+}
+header .navbar {
+  width: 100%;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  box-shadow: 0px 0px 5px #757575;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+header .navbar_brand {
+  width: 25%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Dancing Script", cursive;
+}
+header .navbar_brand a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #f48fb1;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin-left: 20px;
+}
+header .navbar_navs {
+  width: 75%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .navbar_navs--textlink {
+  list-style: none;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+header .navbar_navs--textlink a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container_page {
+  grid-column: span 12;
+  grid-row: span 1;
+  height: 525px;
+}
+.container_page .container_page--title {
+  font-family: "Dancing Script", cursive;
+  font-size: 34px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+  color: #f48fb1;
+  font-weight: bold;
+}
+.container_page .container_page--supplement {
+  font-size: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.container_halfpage {
+  grid-column: span 6;
+  grid-row: span 1;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.container_quarterpage {
+  grid-column: span 3;
+  grid-row: span 1;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.button {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  font-size: 15px;
+  border: 0px solid white;
+  border-radius: 0.3em;
+  background-color: #f48fb1;
+  color: black;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.button:hover {
+  background-color: #f8bbd0;
+}
+
+.button_big {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  font-size: 20px;
+}
+
+.button_small {
+  font-size: 12px;
+}
+
+.button--red {
+  background-color: #c62828;
+  color: white;
+}
+
+.button--red:hover {
+  background-color: #f44336;
+  color: black;
+}
+
+.button--green {
+  background-color: #4caf50;
+  color: black;
+}
+
+.button--green:hover {
+  background-color: #81c784;
+  color: black;
+}
+
+.button--blue {
+  background-color: #039be5;
+  color: black;
+}
+
+.button--blue:hover {
+  background-color: #29b6f6;
+  color: black;
+}
+
+.button--yellow {
+  background-color: #fbc02d;
+  color: black;
+}
+
+.button--yellow:hover {
+  background-color: #fdd835;
+  color: black;
+}
+
+.button--clear {
+  background-color: transparent;
+  color: black;
+}
+
+.button--clear:hover {
+  background-color: #eceff1;
+  color: black;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  body {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .container_page {
+    grid-column: span 6;
+    height: 975px;
+  }
+
+  .container_halfpage {
+    border-bottom: 1px solid #757575;
+  }
+
+  .container_quarterpage {
+    grid-column: span 3;
+    border-right: 1px solid #757575;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  body {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5px;
+  }
+
+  .container_page {
+    grid-column: span 3;
+  }
+
+  .container_halfpage {
+    grid-column: span 3;
+  }
+
+  .container_quarterpage {
+    grid-column: span 3;
+  }
+
+  header .navbar_navs--textlink {
+    font-size: 10px;
+  }
+
+  .container {
+    border-bottom: 1px solid #757575;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

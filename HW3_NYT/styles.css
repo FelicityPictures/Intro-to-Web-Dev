@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Amiri|UnifrakturCook:700');
+
+body{
+  font-family: 'Amiri', serif;
+  font-weight: lighter;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav{
+  width: 79rem;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding-left: 10px;
+}
+
+nav > a{
+  display: block;
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  background-color: inherit;
+  padding: 3px 8px 3px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav > a:hover{
+  font-weight: bold;
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+
+nav > a:nth-child(1){
+  font-family: 'UnifrakturCook', cursive;
+  font-size: 2em;
+}
+
+h2{
+  margin: 0px;
+  margin-top: 30px;
+  padding-top: 10px;
+  line-height: 1em;
+  border-top: 5px double black;
+}
+
+#content{
+  width: 75rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+}
+
+#content > article{
+  padding: 10px;
+  grid-column: span 2;
+}
+
+.main-article{
+  grid-row: span 3;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #757575;
+}
+
+.main-article > h1{
+  width: 27rem;
+  text-align: center;
+  line-height: 1em;
+  margin-bottom: 10px;
+}
+.main-article > p{
+  width: 28rem;
+  text-align: center;
+}
+
+figure{
+  padding: 0px;
+  margin: 0px;
+}
+
+figcaption{
+  text-align: right;
+  /* margin-top: -7px; */
+  color: #757575;
+  line-height: 0.5em;
+  font-size: 1em;
+}
+
+.extra-article{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  border-bottom: 1px solid #757575;
+}
+
+.extra-article:nth-child(4){
+  border: 0px solid white;
+}
+
+.extra-article > img{
+  width: 200px;
+  height: 100px;
+}
+
+.text-container{
+  display: flex;
+  flex-direction: column;
+}
+
+p{
+  padding: 0px;
+  margin: 0px;
+  line-height: 1.25em;
+}
+
+h4{
+  padding: 0px;
+  margin: 0px;
+  line-height: 1.5em;
+}
+
+.stamp{
+  margin-top: 5px;
+  /* width: 10rem; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #757575;
+  font-size: 0.75em;
+}
+
+#related-articles{
+  grid-column: 5/span 1;
+  grid-row: 1/span 3;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #757575
+}
+
+#related-articles > h4{
+  border-bottom: 1px solid #757575;
+  padding: 10px;
+  line-height: 1.25em;
+  margin-left: 10px;
+}

@@ -1,0 +1,25 @@
+/* 0,1,1,1 */
+p#second.third{
+  color: orange;
+}
+
+/* 0,1,0,0 */
+#second{
+  color: green;
+}
+
+/* 0,2,1,0 */
+#someId > #second.third{
+  color: blue;
+}
+
+/* 0,0,1,0 */
+.third{
+  color: purple;
+}
+
+/* 0,0,0,1 */
+p{
+  color: brown;
+  font-weight: bold;
+}

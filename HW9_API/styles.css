@@ -1,0 +1,37 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#post-container{
+  border: 1px solid black;
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 50px;
+}
+
+#content-table{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+#error-message{
+  font-size: 10px;
+  color: red;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.post{
+  border: 1px solid black;
+  padding: 10px 20px 40px 20px;
+  margin: 20px;
+  width: 500px;
+}
+
+p{
+  margin: 0px;
+}

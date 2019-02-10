@@ -1,0 +1,16 @@
+.reveal section h2[data-opacity="2"] {
+  opacity: 0.85;
+}
+.reveal section h3[data-opacity="3"] {
+  opacity: 0.70;
+}
+.reveal section h4[data-opacity="4"] {
+  opacity: 0.55;
+}
+.reveal section p[data-opacity="p"] {
+  opacity: 0.46;
+}
+
+#bareMinimum{
+  color: #898989;
+}

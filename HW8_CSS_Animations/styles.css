@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Indie+Flower");
+body {
+  background-color: pink;
+}
+
+.cookie {
+  background-color: #F3BA7F;
+  position: absolute;
+  top: 150px;
+  left: 400px;
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
+  border: 3px solid black;
+}
+
+.bite-cookie {
+  animation: 0.1s tilt linear forwards 1;
+}
+
+@keyframes tilt {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
+.chip {
+  background-color: #783F1D;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  border: 3px solid black;
+}
+
+#chip-0 {
+  top: 170px;
+  left: 0px;
+}
+
+#chip-1 {
+  top: 30px;
+  left: 50px;
+}
+
+#chip-2 {
+  top: 150px;
+  left: 75px;
+}
+
+#chip-3 {
+  top: 270px;
+  left: 119px;
+}
+
+#chip-4 {
+  top: 38px;
+  left: 175px;
+}
+
+#chip-5 {
+  top: 197px;
+  left: 170px;
+}
+
+#chip-6 {
+  top: 200px;
+  left: 250px;
+}
+
+#chip-7 {
+  top: 100px;
+  left: 230px;
+}
+
+.bite {
+  position: absolute;
+  width: 85.7142857143px;
+  height: 85.7142857143px;
+  background-color: pink;
+  border-radius: 100px;
+  right: 45px;
+  top: -20px;
+}
+
+.bite:before {
+  content: "";
+  position: absolute;
+  width: 85.7142857143px;
+  height: 85.7142857143px;
+  border-radius: 100px;
+  background-color: pink;
+  left: 20px;
+  top: 50px;
+}
+
+.bite:after {
+  content: "";
+  position: absolute;
+  width: 85.7142857143px;
+  height: 85.7142857143px;
+  border-radius: 100px;
+  background-color: pink;
+  left: 70px;
+  top: 50px;
+}
+
+.tear {
+  position: absolute;
+  top: 150px;
+  left: 170px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid #61CBEE;
+  opacity: 0;
+}
+
+.tear:before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: 13.5px;
+  left: -11px;
+  border-radius: 50%;
+  background-color: #61CBEE;
+}
+
+.tear:after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 10px;
+  transform: rotate(331deg);
+  top: 10px;
+  left: 3px;
+  background-color: white;
+}
+
+.tear-drop {
+  animation: 2s teardrop ease-in forwards 1;
+}
+
+@keyframes teardrop {
+  0% {
+    top: 150px;
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    top: 305px;
+    opacity: 0;
+  }
+}
+.hidden {
+  display: none;
+}
+
+.textbox {
+  font-family: "Indie Flower", cursive;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 150px;
+  left: 200px;
+  width: 200px;
+  height: 70px;
+  background: white;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 70px;
+  animation: 1.5s bounce linear infinite;
+}
+
+.textbox:before {
+  position: absolute;
+  top: 30px;
+  right: -10px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid white;
+}
+
+@keyframes bounce {
+  0% {
+    top: 150px;
+  }
+  25% {
+    top: 153px;
+  }
+  50% {
+    top: 155px;
+  }
+  75% {
+    top: 153px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+.instructions {
+  font-family: "Baloo Bhaijaan", cursive;
+  font-size: 20px;
+  position: absolute;
+  top: 450px;
+  left: 450px;
+}
+
+/*# sourceMappingURL=styles.css.map */
